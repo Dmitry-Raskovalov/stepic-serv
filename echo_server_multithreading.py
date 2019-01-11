@@ -30,4 +30,7 @@ for i in range(10):
 	serv_thread[i].start()
 	serv_thread[i].setName('serv%s'%i)
 	print(serv_thread[i].getName(), ' started')
-	
+try:
+        while True: pass
+except KeyboardInterrupt:
+        print('interrupted!')
